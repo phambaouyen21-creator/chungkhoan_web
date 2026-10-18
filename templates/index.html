@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mô phỏng biến động giá cổ phiếu">
+  <title>Mô phỏng Chứng khoán</title>
+  <link rel="stylesheet" href="{{ url_for('static', path='css/style.css') }}">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <p class="eyebrow">LẬP TRÌNH PYTHON NÂNG CAO</p>
+      <h1>Mô phỏng Biến động Giá Cổ phiếu: {{ ma_co_phieu | upper }}</h1>
+      
+      <div style="margin-top: 15px; font-size: 0.9em; opacity: 0.9;">
+        <p style="margin: 5px 0;"><strong>Sinh viên thực hiện:</strong> {{ thong_tin_sinh_vien.ho_ten }} - {{ thong_tin_sinh_vien.mssv }}</p>
+        <p style="margin: 5px 0;"><strong>Lớp:</strong> {{ thong_tin_sinh_vien.lop }} | {{ thong_tin_sinh_vien.truong }}</p>
+      </div>
+    </div>
+  </header>
+  <main class="container single-video-main">
+    <section class="card video-card">
+      <video controls autoplay loop playsinline preload="auto" aria-label="Video mô phỏng biến động giá cổ phiếu">
+        <source src="{{ url_for('static', path='video/abc.mp4') }}" type="video/mp4">
+        Trình duyệt của bạn không hỗ trợ video HTML5.
+      </video>
+    </section>
+  </main>
+</body>
+</html>
