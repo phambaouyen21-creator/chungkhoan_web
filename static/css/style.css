@@ -43,19 +43,19 @@ body {
   color: #ffffff;
 } 
 
-
 .single-video-main {
   margin-top: 35px;
   margin-bottom: 50px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;    
+  gap: 25px;              
 }
 
 .video-card {
   width: 100%;
   max-width: 950px; 
 }
-
 
 .card {
   background-color: var(--card-bg);
@@ -65,10 +65,70 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
-
 video { 
   width: 100%; 
   border-radius: 6px; 
   background-color: #000;
   display: block; 
 }
+
+.legend-card {
+  width: 100%;
+  max-width: 950px; 
+  padding: 30px;
+}
+
+.legend-title {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.legend-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.legend-item p {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 16px;
+  color: var(--text-main);
+}
+
+.color-box {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  margin-top: 2px; 
+}
+
+.legend-note {
+  font-style: italic;
+  color: #94a3b8; 
+  font-size: 15px;
+  margin: 25px 0;
+  line-height: 1.5;
+}
+
+.legend-divider {
+  border: 0;
+  height: 1px;
+  background-color: #1e293b; 
+  margin: 0 0 25px 0;
+}
+
+.color-yellow { background-color: #facc15; }
+.color-blue { background-color: #0ea5e9; }
+.color-purple { background-color: #a855f7; }
+.color-green { background-color: #22c55e; }
+.color-red { background-color: #ef4444; }
